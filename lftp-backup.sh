@@ -7,23 +7,23 @@ export PATH
 
 # -- Common --
 
-COMMON_BACKUP_NAME = "site"
-COMMON_KEEP_DAYS = 30
-COMMON_DATE = "$(date '+%Y-%m-%d')"
-COMMON_MYSQLDUMP_PATH = "$(which mysqldump)"
-COMMON_FIND_PATH = "$(which find)"
-COMMON_TAR_PATH = "$(which tar)"
+COMMON_BACKUP_NAME="site"
+COMMON_KEEP_DAYS=30
+COMMON_DATE="$(date '+%Y-%m-%d')"
+COMMON_MYSQLDUMP_PATH="$(which mysqldump)"
+COMMON_FIND_PATH="$(which find)"
+COMMON_TAR_PATH="$(which tar)"
 
 # -- Local dirs --
 
-LOCAL_BACKUP_DIR = "/backups/"
-LOCAL_BACKUP_SITE_DIR = "$LOCAL_BACKUP_DIR/$COMMON_BACKUP_NAME"
-LOCAL_BACKUP_MYSQL_DIR = "$LOCAL_BACKUP_SITE_DIR/mysql/"
-LOCAL_BACKUP_WWW_DIR = "$LOCAL_BACKUP_SITE_DIR/www/"
-LOCAL_EXCLUDE_DIRS = "--exclude=\"*/storage\" --exclude=\"*/cache\""
+LOCAL_BACKUP_DIR="/backups"
+LOCAL_BACKUP_SITE_DIR="$LOCAL_BACKUP_DIR/$COMMON_BACKUP_NAME"
+LOCAL_BACKUP_MYSQL_DIR="$LOCAL_BACKUP_SITE_DIR/mysql/"
+LOCAL_BACKUP_WWW_DIR="$LOCAL_BACKUP_SITE_DIR/www/"
+LOCAL_EXCLUDE_DIRS="--exclude=\"*/storage\" --exclude=\"*/cache\""
 
-LOCAL_WWW_SOURCE_DIR = "/var/www/"
-LOCAL_WWW_SOURCE_BASENAME = "site";
+LOCAL_WWW_SOURCE_DIR="/var/www"
+LOCAL_WWW_SOURCE_BASENAME="site";
 
 # -- MySQL --
 
@@ -33,11 +33,11 @@ MYSQL_PASS="pass"
 
 # -- LFTP --
 
-LFTP_SERVER = "server"
-LFTP_USER = "user"
-LFTP_PASS = "pass"
-LFTP_BACKUP_DIR = "/backups/"
-LFTP_BACKUP_SITE_DIR = "$LFTP_BACKUP_DIR/$COMMON_BACKUP_NAME"
+LFTP_SERVER="server"
+LFTP_USER="user"
+LFTP_PASS="pass"
+LFTP_BACKUP_DIR="/backups"
+LFTP_BACKUP_SITE_DIR="$LFTP_BACKUP_DIR/$COMMON_BACKUP_NAME"
 
 # === PROGRESS ===
 
